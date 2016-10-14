@@ -1,0 +1,12 @@
+prefix=@ROBOTLOCOMOTION-LCMTYPES_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib@LIB_SUFFIX@
+includedir=${prefix}/include/lcmtypes
+
+Name: robotlocomotion-lcmtypes-java
+Description: LCM type java bindings for robotlocomotion
+Requires:  lcm-java
+Version: 0.0.0
+Libs:
+Cflags:
+classpath=${prefix}/share/java/robotlocomotion-lcmtypes.jar
