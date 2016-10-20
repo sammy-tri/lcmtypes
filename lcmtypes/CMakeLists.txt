@@ -31,19 +31,18 @@ lcm_wrap_types(
   support_sequence_t.lcm
   )
 
-include_directories($<TARGET_PROPERTY:lcmtypes_bot2-core,INTERFACE_INCLUDE_DIRECTORIES>)
 
 lcm_add_library(robotlocomotion-lcmtypes C ${c_sources} ${c_install_headers})
 generate_export_header(robotlocomotion-lcmtypes
   BASE_NAME robotlocomotion_lcmtypes)
 target_include_directories(robotlocomotion-lcmtypes INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>)
-target_link_libraries(robotlocomotion-lcmtypes PUBLIC INTERFACE lcmtypes_bot2-core)
+target_link_libraries(robotlocomotion-lcmtypes PUBLIC lcmtypes_bot2-core)
 
 lcm_add_library(robotlocomotion-lcmtypes-cpp CPP ${cpp_install_headers})
 target_include_directories(robotlocomotion-lcmtypes-cpp INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>)
-target_link_libraries(robotlocomotion-lcmtypes-cpp PUBLIC INTERFACE lcmtypes_bot2-core-cpp)
+target_link_libraries(robotlocomotion-lcmtypes-cpp INTERFACE lcmtypes_bot2-core-cpp)
 
 lcm_install_headers(
   ${c_install_headers}
