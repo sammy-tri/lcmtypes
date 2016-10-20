@@ -45,6 +45,7 @@ target_include_directories(robotlocomotion-lcmtypes-cpp INTERFACE
 target_link_libraries(robotlocomotion-lcmtypes-cpp INTERFACE lcmtypes_bot2-core-cpp)
 
 lcm_install_headers(
+  ${CMAKE_CURRENT_BINARY_DIR}/robotlocomotion_lcmtypes_export.h
   ${c_install_headers}
   ${cpp_install_headers}
   DESTINATION include/lcmtypes
