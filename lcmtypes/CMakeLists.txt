@@ -29,6 +29,11 @@ lcm_wrap_types(
   support_body_t.lcm
   support_element_t.lcm
   support_sequence_t.lcm
+  viewer_command_t.lcm
+  viewer_draw_t.lcm
+  viewer_geometry_data_t.lcm
+  viewer_link_data_t.lcm
+  viewer_load_robot_t.lcm
   )
 
 
