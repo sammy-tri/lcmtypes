@@ -34,6 +34,7 @@ lcm_wrap_types(
   viewer_geometry_data_t.lcm
   viewer_link_data_t.lcm
   viewer_load_robot_t.lcm
+  viewer2_comms_t.lcm
   )
 
 
