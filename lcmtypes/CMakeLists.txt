@@ -70,7 +70,7 @@ if(JAVA_FOUND)
   else()
     include(UseJava)
     add_jar(robotlocomotion-lcmtypes-jar
-      OUTPUT_NAME robotlocomotion-lcmtypes
+      OUTPUT_NAME lcmtypes_robotlocomotion
       INCLUDE_JARS lcmtypes_bot2-core-jar lcm-java
       SOURCES ${java_sources}
     )
