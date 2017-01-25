@@ -23,6 +23,7 @@ lcm_wrap_types(
   grasp_transition_state_t.lcm
   plan_control_t.lcm
   plan_status_t.lcm
+  residual_observer_state_t.lcm
   robot_plan_t.lcm
   robot_plan_with_supports_t.lcm
   robot_plan_w_keyframes_t.lcm
@@ -75,7 +76,7 @@ if(JAVA_FOUND)
   else()
     include(UseJava)
     add_jar(robotlocomotion-lcmtypes-jar
-      OUTPUT_NAME robotlocomotion-lcmtypes
+      OUTPUT_NAME lcmtypes_robotlocomotion
       INCLUDE_JARS lcmtypes_bot2-core-jar lcm-java
       SOURCES ${java_sources}
     )
