@@ -20,9 +20,14 @@ lcm_wrap_types(
   CREATE_CPP_AGGREGATE_HEADER
   ${python_args}
   ${java_args}
+  header_t.lcm
   grasp_transition_state_t.lcm
   plan_control_t.lcm
   plan_status_t.lcm
+  point_t.lcm
+  pose_t.lcm
+  pose_stamped_t.lcm
+  quaternion_t.lcm
   residual_observer_state_t.lcm
   robot_plan_t.lcm
   robot_plan_with_supports_t.lcm
