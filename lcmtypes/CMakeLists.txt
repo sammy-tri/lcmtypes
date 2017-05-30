@@ -21,6 +21,8 @@ lcm_wrap_types(
   ${python_args}
   ${java_args}
   header_t.lcm
+  image_array_t.lcm
+  image_t.lcm
   grasp_transition_state_t.lcm
   plan_control_t.lcm
   plan_status_t.lcm
