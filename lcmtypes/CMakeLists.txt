@@ -114,11 +114,13 @@ configure_package_config_file(
 # Exported targets for build directory
 export(
   TARGETS robotlocomotion-lcmtypes robotlocomotion-lcmtypes-cpp
+  NAMESPACE ${PROJECT_NAME}::
   FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}Targets.cmake
 )
 
 # Exported targets for installation
 install(EXPORT ${PROJECT_NAME}Targets
+  NAMESPACE ${PROJECT_NAME}::
   DESTINATION ${CONFIG_INSTALL_DIR}
   FILE ${PROJECT_NAME}Targets.cmake
 )
