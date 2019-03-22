@@ -20,9 +20,13 @@ lcm_wrap_types(
   CREATE_CPP_AGGREGATE_HEADER
   ${python_args}
   ${java_args}
+  camera_description_t.lcm
+  extrinsics_t.lcm
   header_t.lcm
   image_array_t.lcm
+  image_description_t.lcm
   image_t.lcm
+  intrinsics_t.lcm
   grasp_transition_state_t.lcm
   plan_control_t.lcm
   plan_status_t.lcm
