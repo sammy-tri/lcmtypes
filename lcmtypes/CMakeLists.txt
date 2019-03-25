@@ -22,12 +22,16 @@ lcm_wrap_types(
   ${java_args}
   camera_description_t.lcm
   extrinsics_t.lcm
+  grasp_transition_state_t.lcm
   header_t.lcm
+  iiwa_command_t.lcm
+  iiwa_status_t.lcm
   image_array_t.lcm
   image_description_t.lcm
   image_t.lcm
   intrinsics_t.lcm
-  grasp_transition_state_t.lcm
+  jaco_command_t.lcm
+  jaco_status_t.lcm
   plan_control_t.lcm
   plan_status_t.lcm
   point_t.lcm
@@ -38,6 +42,8 @@ lcm_wrap_types(
   robot_plan_t.lcm
   robot_plan_with_supports_t.lcm
   robot_plan_w_keyframes_t.lcm
+  schunk_wsg_command_t.lcm
+  schunk_wsg_status_t.lcm
   support_body_t.lcm
   support_element_t.lcm
   support_sequence_t.lcm
